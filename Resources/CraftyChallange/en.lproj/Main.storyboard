@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CraftyChallange" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wb2-qt-p5m">
+                                <rect key="frame" x="165" y="314" width="45" height="59"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="emY-bD-2VP">
+                                        <rect key="frame" x="1.5" y="0.0" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PX0-EG-wYK">
+                                        <rect key="frame" x="0.0" y="29" width="46" height="30"/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="didPressButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="pvX-ie-gKZ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="PX0-EG-wYK" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Wb2-qt-p5m" secondAttribute="leading" id="7Lj-Je-qgL"/>
+                                    <constraint firstItem="emY-bD-2VP" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Wb2-qt-p5m" secondAttribute="leading" id="9tx-iS-FVx"/>
+                                    <constraint firstItem="PX0-EG-wYK" firstAttribute="top" secondItem="emY-bD-2VP" secondAttribute="bottom" constant="8" id="HX7-jx-mYl"/>
+                                    <constraint firstItem="emY-bD-2VP" firstAttribute="top" secondItem="Wb2-qt-p5m" secondAttribute="top" id="IHC-mz-ioV"/>
+                                    <constraint firstItem="emY-bD-2VP" firstAttribute="centerX" secondItem="Wb2-qt-p5m" secondAttribute="centerX" id="Qc5-mU-8Gv"/>
+                                    <constraint firstAttribute="bottom" secondItem="PX0-EG-wYK" secondAttribute="bottom" id="Tm2-5b-Fap"/>
+                                    <constraint firstItem="emY-bD-2VP" firstAttribute="leading" secondItem="Wb2-qt-p5m" secondAttribute="leading" priority="250" id="WTi-v1-7Pj"/>
+                                    <constraint firstItem="PX0-EG-wYK" firstAttribute="centerX" secondItem="Wb2-qt-p5m" secondAttribute="centerX" id="bjc-Ud-mvB"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Wb2-qt-p5m" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="R6A-yo-uup"/>
+                            <constraint firstItem="Wb2-qt-p5m" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="XDc-1U-tRe"/>
+                            <constraint firstItem="Wb2-qt-p5m" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="vhb-Nd-icY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="PX0-EG-wYK" id="50e-1q-ny8"/>
+                        <outlet property="label" destination="emY-bD-2VP" id="UEa-jq-v0g"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
